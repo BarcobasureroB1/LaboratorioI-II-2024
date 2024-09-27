@@ -1,5 +1,9 @@
 package cl.ucn.modelo;
 
-public class Databaseconec {
+import cl.ucn.interfaz.proxy;
+
+public class Databaseconec implements proxy{
+
+
 
 }

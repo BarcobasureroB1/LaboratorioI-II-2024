@@ -8,7 +8,7 @@ import cl.ucn.interfaz.interfaz;
 
 @Entity
 @Table(name="recursos")
-public class RecursosMultimedia implements interfaz{
+public class RecursosMultimedia {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
