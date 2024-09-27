@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 
 import java.util.List;
 
+import cl.ucn.interfaz.interfaz;
+
 @Entity
 @Table(name="recursos")
-public class RecursosMultimedia {
+public class RecursosMultimedia implements interfaz{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

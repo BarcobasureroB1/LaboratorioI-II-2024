@@ -1,7 +1,10 @@
 package cl.ucn.main;
 
 import cl.ucn.modelo.Usuario;
+import cl.ucn.modelo.RecursosMultimedia;
 import jakarta.persistence.*;
+import cl.ucn.proxy.RecursosMultimediaProxy;
+import cl.ucn.servicio.UsuarioServiceImpl;
 
 import java.util.List;
 
