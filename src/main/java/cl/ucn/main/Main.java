@@ -1,31 +1,23 @@
 package cl.ucn.main;
-
+import cl.ucn.interfaz.*;
+import cl.ucn.modelo.Databaseproxy;
 import cl.ucn.modelo.Usuario;
 import jakarta.persistence.*;
-
+import cl.ucn.util.*;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("multimediaApp");
-        EntityManager em = emf.createEntityManager();
+        
 
         // Parte 1
-        int rut = 89830291;
-        String jpql = "SELECT u from Usuario u WHERE u.rut = :rut";
-        TypedQuery<Usuario> query = em.createQuery(jpql, Usuario.class);
-        query.setParameter("rut", rut);
-        try {
-            Usuario usuario = query.getSingleResult();
-            System.out.println("El usuario: " + usuario.getRut() + " existe!");
-        }catch (NoResultException e){
-            System.out.println("El usuario no existe!");
-        }
+        proxy prueba = new Databaseproxy();
+        prueba.mostrar();
 
         // Parte 2
-        jpql = "SELECT u from Usuario u";
+       /*  jpql = "SELECT u from Usuario u";
         TypedQuery<Usuario> query1 = em.createQuery(jpql, Usuario.class);
         List<Usuario> usuarios = query1.getResultList();
         for (Usuario usuario : usuarios){
@@ -36,6 +28,6 @@ public class Main {
         }
 
         em.close();
-
+        */
     }
 }

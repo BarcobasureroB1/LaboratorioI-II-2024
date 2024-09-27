@@ -34,7 +34,7 @@ los permisos o no, de acuerdo al archivo asignado por defecto.
 <hr>
 
 ## Explicación
-(Escriba aquí su explicación)
-
+Se usó el patrón de diseño Proxy para la revisión de los usuarios.
+(Hay que hacer click derecho y run en el main para su funcionamiento).
 
 <hr>
